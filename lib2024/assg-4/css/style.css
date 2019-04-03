@@ -17,6 +17,11 @@
 				display: table;
 			}
 
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
 			/*Header Styles*/
 			header{
     				height: 230px;
@@ -88,14 +93,14 @@
 			    }
 			/*Body Styles*/
 			.site-content {
-				float: left;
-				width: 70%;
+				padding: 15px;
+				width:100%;
 				box-sizing: border-box;
 			}
 
 			.site-sidebar {
-				float: left;
-				width: 30%;
+				padding: 15px;
+				width: 100%;
 				box-sizing: border-box;
 			}
 
@@ -104,10 +109,6 @@
 				padding: 10px;
 				box-sizing: border-box;
 				float: left;
-			}
-
-			aside {  
-  				display: block;
 			}
 
 			/*Footer Styles*/

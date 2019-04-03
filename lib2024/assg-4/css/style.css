@@ -22,10 +22,16 @@
     				height: 150px;
     				width: 100%;
     				background-color: #7cc576;
+    		}
+
+    		h1 { 
+    			display: inline; 
 			}
-			.box {
-				width: 80px;
+			.box1 {
+				position: fixed;
+				width: 100px;
 				height: 40px;
+				left: 10%;
 				padding-top: 20px;
 				text-align: center;
 				background: #6dcff6;
@@ -33,58 +39,40 @@
 				border-radius:  0px 0px 0px 0px;
 			}
 
-			.box {
-
-				position: relative;
-				/*position relative is positioning an element relative to its parent, this is also default behaviour*/
-				top: 20px;
-				/*this defines position from top of parent(section)*/
-				left: 20px;
-				/*this defines position from left of parent*/
-			}
-
-			.b1 {
-				position: absolute;
-				/*position absolute positions the element absolutely relative to the parent*/
-				/*It means it ignores the positioning of its siblings*/
-				top: 40px;
-				left: 50px;
-				z-index: 1;
-				/* z-index is the placement of overlapping elements*/
-				/*higher the value, closer to the screen element is */
-				/*for z-index to work, an element must have a position declaration*/
-			}
-
-			.b2 {
-				position: absolute;
-				/*position static removes postioning from element*/
-				top:90px;
-				/*top is ignored as the positioning has been removed*/
-				z-index: 90px;
-				/*z-index is ignored as the postioning has been removed*/
-			}
-
-			.b3 {
-				position: absolute;
-				top: 90px;
-				z-index: 1;
-			}
-
-			.b4 {
+			.box2 {
 				position: fixed;
-				/* position fixed, positions the element relative to the browser*/
-				/*the following code along with position:fixed will make the element centred horizontally and vertically on the screen*/
-				top:50%;
-				left: 50%;
-				z-index: 3;
-				/*margin top = -(height/2)*/
-				/*In this case as total height = 150px + 150px = 300px*/
-				/*-(300/2) = -150px*/
-				margin-top: -150px;
-				/*margin left = -(width/2)*/
-				/*width = 300px*/
-				/*-(300)/2 = -150px */
-				margin-left: -150px;
+				width: 100px;
+				height: 40px;
+				left:20%;
+				padding-top: 20px;
+				text-align: center;
+				background: #6dcff6;
+				font-size: 15px;
+				border-radius:  0px 0px 0px 0px;
+			}
+
+			.box3 {
+				position: fixed;
+				width: 100px;
+				height: 40px;
+				left:30%;
+				padding-top: 20px;
+				text-align: center;
+				background: #6dcff6;
+				font-size: 15px;
+				border-radius:  0px 0px 0px 0px;
+			}
+
+			.box4 {
+				position: fixed;
+				width: 100px;
+				height: 40px;
+				left: 40%;
+				padding-top: 20px;
+				text-align: center;
+				background: #6dcff6;
+				font-size: 15px;
+				border-radius:  0px 0px 0px 0px;
 			}
 			    }
 			/*Body Styles*/
@@ -134,4 +122,5 @@
 	    		float: right;
 	    	
 	    	}
+
 

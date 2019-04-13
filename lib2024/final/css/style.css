@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+html{
+	font-size: 16px;
+}
+
+h1,h2,h3,h4 {
+				font-size: 1.5em;
+			}
+
+.box {
+		width: 100px;
+		text-align: center;
+		background: #34efb1;
+		font-size: 1.25em;
+		border-radius: 0%;
+		display: inline;
+		margin-left: 2.5em;
+	}
+
+.main-nav{
+		width: 100%;
+		padding: 1em;
+		background-color: #34efb1;
+}
+
+
+body {  background: #efefef url(./img/img.png) repeat fixed top left; }  
+
+/*.container:{
+	width: 100%;
+	clear: both;
+
+}
+
+.container::after{
+	content: "";
+	display:block;
+	clear: both;
+
+}
+#floated{
+	float: right;
+	width: 32%;
+	/*width 32% makes sure the image will only take this much of the screen.
+}*/
+
+#schedule{
+	clear: both;
+}
+
+.floater {
+ 	float: right;
+    clear: both;
+    width: 32%; 
+}
+.container {
+    clear: both;
+    display: inline-block;
+}
+
+
+
+
+
+
+table, th, td  {
+		  		border: 1px solid black; text-align: center;
+		  		}
+table{
+		width:100%;
+	}
+
+h5{
+	font-size: 20px
+}

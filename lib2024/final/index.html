@@ -3,63 +3,53 @@
 <head>
 	<title>Final Assignment</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<style type="text/css">
-		}
-		/*#container{
-			width: px;
-		}
-		#floated{
-			float: right;
-			width: px;
-		}*/
-
-	</style>
 </head>
 <body>
 	<header>
 		<div class="logo">
-			<!-- <img src="img/" alt="Logo"> -->
+			<p class="logo">MY LOGO</p>
 		</div>
 	</header>
 	<main>
 		<nav class="main-nav-container desktop-nav">
 			<div class="main-nav clearfix">
 				<div class="box border-box">
-					<a href="home.html">Home</a>
+					<a class="text" href="home.html">HOME</a>
 				</div>
 				<div class="box border-box">
-					<a href="about.html">About</a>
+					<a class="text" href="about.html">ABOUT</a>
 				</div>
 				<div class="box border-box">
-					<a href="schedule.html">Schedule</a>
+					<a class="text" href="schedule.html">SCHEDULE</a>
 				</div>
 				<div class="box border-box">
-					<a href="contact.html">Contact</a>
+					<a class="text" href="contact.html">CONTACT</a>
 				</div>
 			</div>
 		</nav>
 
-		<h1>About</h1>
-			<!-- <div class="container">
-				<img id="floated" src="img/img1.png" alt="Image">
-			</div> -->
-			<aside class="col-main site-sidebar">
-				<nav class="sidebar-nav-container">
-					<img id="floated" src="img/img1.png" alt="Image">
-				</nav>
-			</aside>
-			<div class="container>"
-				<p>Mystery snail lionfish papershell houndshark. Swimming are milk shark zebra moray est. The crackin crazy Neon goby nurse shark moon. Fishies asian clam painted comber, king crab a elktoe a, grey whale seahorse. Peppered moray clownfish hawkfish at seahorse hammerhead a funny snake eel. Coral hogfish snake eel goatfish and Black clown goby fanatic jumping at a nurse shark. Milk shark swim Asian clam soldierfish. Breathing heavily pipefish, cold and smiling mandarinfish, peaclam slicing water fingernail clam, is swimmin. Sea grape rock lobster at Indian ocean. Frogfish spot hogfish rabbitfish spotted sweetlips swim, peppered moray creature jumped. Wobbegong shark blue whale gold damsel faucet snail, in snake eel sea coral grouper. Parrotfish a. Crazy houndshark with pipefish snake eel. Banana wrasse in yellow pseudochromis non mermaid parrotfish mystery snail. Coral hogfish at Bursa trigger spot hogfish bite yellow pseudochromis weasel shark seabass in angelfish. Floating ea.
-				</p>
-				<p>
-				 Snail fishy grow, amazing cold blooded seabass goatfish lionfish painted comber. Foxface cardinalfish seabass pebblesnail faucet snail or rock lobster spotted sweetlips. In seahorse banded eel, butter hamlet are butterflyfish blue tang, wabash pigtoe sea coral king crab heelsplitter, in painted comber Banded eel bicolor blenny. Mystery snail lionfish papershell houndshark. Peppered moray stingray grouper our kelp. In seahorse banded eel, butter hamlet are butterflyfish blue tang, wabash pigtoe sea coral king crab heelsplitter, in painted comber Bande.
-				</p>
-			</div>
-
+		<h1>ABOUT</h1>
+			<section class="clearfix">
+				<aside class="img-slide-thumb">
+					<div>
+						<img src="img/img1.png" alt="Image">
+					</div>
+				</aside>
+				<article>
+					<div class="container">
+						<p>Mystery snail lionfish papershell houndshark. Swimming are milk shark zebra moray est. The crackin crazy Neon goby nurse shark moon. Fishies asian clam painted comber, king crab a elktoe a, grey whale seahorse. Peppered moray clownfish hawkfish at seahorse hammerhead a funny snake eel. Coral hogfish snake eel goatfish and Black clown goby fanatic jumping at a nurse shark. Milk shark swim Asian clam soldierfish. Breathing heavily pipefish, cold and smiling mandarinfish, peaclam slicing water fingernail clam, is swimmin. Sea grape rock lobster at Indian ocean. Frogfish spot hogfish rabbitfish spotted sweetlips swim, peppered moray creature jumped. Wobbegong shark blue whale gold damsel faucet snail, in snake eel sea coral grouper. Parrotfish a. Crazy houndshark with pipefish snake eel. Banana wrasse in yellow pseudochromis non mermaid parrotfish mystery snail. Coral hogfish at Bursa trigger spot hogfish bite yellow pseudochromis weasel shark seabass in angelfish. Floating ea.
+						</p>
+						<p>
+						 Snail fishy grow, amazing cold blooded seabass goatfish lionfish painted comber. Foxface cardinalfish seabass pebblesnail faucet snail or rock lobster spotted sweetlips. In seahorse banded eel, butter hamlet are butterflyfish blue tang, wabash pigtoe sea coral king crab heelsplitter, in painted comber Banded eel bicolor blenny. Mystery snail lionfish papershell houndshark. Peppered moray stingray grouper our kelp. In seahorse banded eel, butter hamlet are butterflyfish blue tang, wabash pigtoe sea coral king crab heelsplitter, in painted comber Bande.
+						</p>
+					</div>
+				</article>
+		</section>
+		<section>
 			<div id="schedule">
-				<h2>Schedule</h2>
+				<h2>SCHEDULE</h2>
 					<table>
-						<tr>
+						<tr id="headings" class="nth-child-odd">
 							<th>Time</th>
 							<th>Monday</th>
 							<th>Tuesday</th> 
@@ -67,7 +57,7 @@
 							<th>Thursday</th>
 							<th>Friday</th>
 						</tr>
-						<tr>
+						<tr class="nth-child-even">
 							<td>09:00-11:00</td>
 							<td>Communications 1</td> 
 							<td>Client Services</td>
@@ -75,7 +65,7 @@
 							<td>Directed Research Seminar</td>
 							<td>Client Services</td>
 						</tr>
-						<tr>
+						<tr class="nth-child-odd">
 							<td>11:00-12:30</td>
 							<td>Reference</td> 
 							<td>Internet Applications</td>
@@ -83,7 +73,7 @@
 							<td>French</td>
 							<td>Reference</td>
 						</tr>
-						<tr>
+						<tr class="nth-child-even">
 							<td>14:00-15:00</td>
 							<td>Acquisitions</td> 
 							<td>Saints and Heroes</td>
@@ -91,7 +81,7 @@
 							<td>Emerging Library Tech</td>
 							<td>Library Software</td>
 						</tr>
-						<tr>
+						<tr class="nth-child-odd">
 							<td>15:30-17:30</td>
 							<td>French</td> 
 							<td>French</td>
@@ -101,10 +91,11 @@
 			  			</tr>
 					</table>
 			</div>
+		</section>
 			<div id="wrapper" class="wrapper">
 				<section id="edit" class="main-section">
 					<form></form>
-					<h3>Edit Profile</h3>
+					<h3>EDIT PROFILE</h3>
 
 					<div id="name-container" class="form-elm">
 						<label for="name">Name</label>
@@ -140,28 +131,41 @@
 					<input type="text" name="postcode" id="postcode">
 			</div>
 
-		<h4>Profile Info</h4>
+		<h4>PROFILE INFO</h4>
 
 		<i class="fas fa-user-circle"></i>
 		<i class="fas fa-envelope"></i>
 	</main>
 	<footer class="footer" id="footer">
-
-		<h5>Follow Us</h5>
-		<div class="socialmedia">
-			<a href="https://twitter.com/">
-				<img src="img/twitter.png" alt="Logo">
-			</a>
-		</div>
-		<div class="socialmedia">
-			<a href="https://www.youtube.com/">
-				<img src="img/youtube.png" alt="Logo">
-			</a>
-		</div>
-		<div class="socialmedia">
-			<a href="https://www.facebook.com/">
-				<img src="img/facebook.png" alt="Logo">
-			</a>
+	    <div class="footer">
+	    	<h5 class="links">Quick Links</h5>
+				<div>
+					<a class="quicklinks" href="#">SCHEDULE</a><br>
+					<a class="quicklinks" href="#">ABOUT</a><br>
+					<a class="quicklinks" href="#">PORTFOLIO</a><br>
+					<a class="quicklinks" href="#">CONTACT</a>
+				</div>
+			
+			<h5 class="media">Follow Us</h5>
+			<div class="socialmedia">
+				<a href="https://twitter.com/">
+					<img src="img/twitter.png" alt="Logo">
+				</a>
+			</div>
+			<div class="socialmedia">
+				<a href="https://www.youtube.com/">
+					<img src="img/youtube.png" alt="Logo">
+				</a>
+			</div>
+			<div class="socialmedia">
+				<a href="https://www.facebook.com/">
+					<img src="img/facebook.png" alt="Logo">
+				</a>
+			</div>
+			<h5 class="ress">Address<h5>
+			<div class="add">
+				<p>1385 Woodroffe Ave<br>Nepean, ON K2G 1V8<br>Canada</p>
+			<div>
 		</div>
 	</footer>
 </body>

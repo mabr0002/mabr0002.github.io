@@ -4,61 +4,74 @@ html{
 	font-size: 16px;
 }
 
-h1,h2,h3,h4 {
+header footer{
+	display: block;
+}
+
+header{
+	height: 70px;
+    width: 100%;
+	background: #ffffff;
+}
+
+.logo{
+	font-size: 1.5em;
+	text-align: left
+	background:#72a9ae;
+	margin-left: 1em;
+}
+
+h1,h2,h3,h4,h5 {
 				font-size: 1.5em;
-			}
+				color: #72a9ae;
+				/*margin: 0px 0px 0px 0px; 
+				padding: 0px 0px 0px 0px;*/
+}
 
 .box {
-		width: 100px;
+		width: 100%;
 		text-align: center;
-		background: #34efb1;
+		background: #71abaf;
 		font-size: 1.25em;
 		border-radius: 0%;
 		display: inline;
 		margin-left: 2.5em;
 	}
 
+.text{
+	color: black;
+	text-decoration: none;
+}
+
 .main-nav{
 		width: 100%;
 		padding: 1em;
-		background-color: #34efb1;
+		background-color: #71abaf;
 }
 
 
-body {  background: #efefef url(./img/img.png) repeat fixed top left; }  
+body {  background: url(../img/img.png) repeat fixed top left; }  
 
-/*.container:{
-	width: 100%;
-	clear: both;
-
-}
-
-.container::after{
+.clearfix:after {
 	content: "";
-	display:block;
-	clear: both;
-
-}
-#floated{
-	float: right;
-	width: 32%;
-	/*width 32% makes sure the image will only take this much of the screen.
-}*/
-
-#schedule{
+	display: block;
 	clear: both;
 }
 
-.floater {
- 	float: right;
-    clear: both;
-    width: 32%; 
-}
-.container {
-    clear: both;
-    display: inline-block;
-}
-
+.img-slide-thumb {
+		width: 30%;
+		padding: 10px;
+		box-sizing: border-box;
+		float: right;
+		box-shadow: none;
+	}
+.container{
+		width: 70%;
+		padding: 10px;
+		box-sizing: border-box;
+		float: left;
+		box-shadow: none;
+	}
 
 
 
@@ -69,8 +82,61 @@ table, th, td  {
 		  		}
 table{
 		width:100%;
+		background-color: #ffffff;
 	}
 
-h5{
-	font-size: 20px
+#headings{
+	color: #7dadb1;
+}
+
+.nth-child-odd{
+	background-color: #ffffff;
+}
+.nth-child-even{
+	background-color: #efefef;
+}
+
+}
+
+
+footer {
+	background: #454545;
+	padding: 15px;
+	height: 230px;
+	width: 100%;
+	box-sizing: border-box;
+	
+}
+.quicklinks{
+	color: black;
+	text-decoration: none;
+}
+
+.links{
+	margin:auto;
+	line-height:30px;
+	padding:20px;
+	width: 20%;
+	float: left;
+}
+
+.media{
+	margin:auto;
+	line-height:30px;
+	padding:20px;
+	width: 20%;
+	float: center;
+}
+
+.ress{
+	margin:auto;
+	line-height:30px;
+	padding:20px;
+	width: 20%;
+	float: right;
+}
+
+.add{
+	color: black;
+	font-size:0.7em;
 }

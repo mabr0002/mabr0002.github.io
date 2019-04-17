@@ -79,17 +79,54 @@
 	<!-- Question 13 -->
 	<li>
 		<p><strong>Question:</strong>Create CSS block to center an element both horizontally and vertically that has position:absolute and has width:200px and height:200px.</p>
-		<p><strong>Answer:</strong></p>
+		<p><strong>Answer:</strong>.box {width: 200px;<br>height: 200px;<br>position: absolute;}</p>
 	</li>
 	<!-- Question 14 -->
 	<li>
-		<p><strong>Question:</strong>Create CSS keyframes block called "spin" that rotates an element. </p>
-		<p><strong>Answer:</strong></p>
+		<p><strong>Question:</strong>Create CSS keyframes block called "spin" that rotates an element.</p>
+		<p><strong>Answer:</strong>img {border-radius: 50%;<br>
+  										-webkit-transition: -webkit-transform .8s ease-in-out;<br>
+          								transition: transform .8s ease-in-out;<br>
+									}<br>
+									img:hover {<br>
+  										-webkit-transform: rotate(360deg);<br>
+         								 transform: rotate(360deg);<br>
+									}</p>
 	</li>
 	<!-- Question 15 -->
 	<li>
 		<p><strong>Question:</strong>Create CSS animation block to rotate an element that has the following properties : class "rotate-me" <br> It rotates 5 times at intervals of 0.5s with "linear" transition using animation keyframes "spin"</p>
 		<p><strong>Answer:</strong></p>
+	</li>
+	<!-- Question 16 -->
+	<li>
+		<p><strong>Question:How would you include create an alert with string "I love JavaScript" using JavaScript?</strong> </p>
+		<p><strong>Answer:alert(elementId+"I love JavaScript");</strong></p>
+	</li>
+	<!-- Question 17 -->
+	<li>
+		<p><strong>Question:</strong>How would you fade out an element with id "fade-me" after a delay of 300ms using JQuery?</p>
+		<p><strong>Answer:</strong></p>
+	</li>
+	<!-- Question 18 -->
+	<li>
+		<p><strong>Question:</strong>How would you select all elements with class "my-class" using Javascript and Jquery?</p>
+		<p><strong>Answer:</strong>$(".my-class").show();</p>
+	</li>
+	<!-- Question 19 -->
+	<li>
+		<p><strong>Question:</strong>Give an example of input field that takes phone number with format "123-456-7890"?</p>
+		<p><strong>Answer:</strong> &lt;label for="phone"&gt;Enter your phone number:
+									&lt;/label>&gt;<br>
+									&lt;input type="tel" id="phone" name="phone"
+       									pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required&gt;<br>
+									&lt;span class="note"&gt;Format: 123-456-7890&lt;/span&gt;
+		</p>
+	</li>
+	<!-- Question 20 -->
+	<li>
+		<p><strong>Question:</strong>Among HTML, CSS, Javascript, JQuery, what language did you like the best? State the reason.</p>
+		<p><strong>Answer:</strong>Personally I liked HTML the best as it made the most sense to me. I did enjoy the results of the other languages but I found them more frustrting to work with.</p>
 	</li>
 </ol>
 </body>

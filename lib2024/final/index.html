@@ -3,10 +3,11 @@
 <head>
 	<title>Final Assignment</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
 	<header>
-		<div class="logo">
+		<div class="logo" font-family="aquilinetworegular">
 			<p class="logo">MY LOGO</p>
 		</div>
 	</header>
@@ -31,9 +32,30 @@
 		<h1>ABOUT</h1>
 			<section class="clearfix">
 				<aside class="img-slide-thumb">
-					<div>
-						<img src="img/img1.png" alt="Image">
+					<div content display-container>
+						<img class="mySlides" src="img/img1.png" alt="Image">
+						<img class="mySlides" src="img/img2.png" alt="Image">
+						<img class="mySlides" src="img/img3.png" alt="Image">
+						<img class="mySlides" src="img/img4.png" alt="Image">
+						<button class="s-button display-left" onclick="plusDivs(-1)"><</button>
+						<button class="s-button display-right" onclick="plusDivs(+1)">></button>
 					</div>
+					<script>
+						var slideIndex = 1;
+							showDivs(slideIndex);
+
+						function plusDivs(n) {
+  							showDivs(slideIndex += n);
+						}
+
+						function showDivs(n) {
+  							var i;
+  							var x = document.getElementsByClassName("mySlides");
+					  		if (n > x.length) {slideIndex = 1;}
+					  		if (n < 1) {slideIndex = x.length;}
+					  		for (i = 0; i < x.length; i++) {x[i].style.display = "none";}
+					 	 	x[slideIndex-1].style.display = "block";}
+					</script>
 				</aside>
 				<article>
 					<div class="container">
@@ -131,42 +153,49 @@
 					<input type="text" name="postcode" id="postcode">
 			</div>
 
-		<h4>PROFILE INFO</h4>
+		<h4 class="p-info">PROFILE INFO</h4>
 
-		<i class="fas fa-user-circle"></i>
-		<i class="fas fa-envelope"></i>
+			<p style="border:3px; border-style: transparent; padding: 1em; width: 20%; height: 300px ; box-shadow: 0px 7px 23px 14px rgba(0,0,0,0.27); background-color: white;">
+          					<i class="fas fa-user-circle"></i>
+							<i class="fas fa-envelope"></i>
+        	</p>			
 	</main>
-	<footer class="footer" id="footer">
-	    <div class="footer">
-	    	<h5 class="links">Quick Links</h5>
-				<div>
-					<a class="quicklinks" href="#">SCHEDULE</a><br>
-					<a class="quicklinks" href="#">ABOUT</a><br>
-					<a class="quicklinks" href="#">PORTFOLIO</a><br>
-					<a class="quicklinks" href="#">CONTACT</a>
-				</div>
-			
-			<h5 class="media">Follow Us</h5>
-			<div class="socialmedia">
-				<a href="https://twitter.com/">
-					<img src="img/twitter.png" alt="Logo">
-				</a>
-			</div>
-			<div class="socialmedia">
-				<a href="https://www.youtube.com/">
-					<img src="img/youtube.png" alt="Logo">
-				</a>
-			</div>
-			<div class="socialmedia">
-				<a href="https://www.facebook.com/">
-					<img src="img/facebook.png" alt="Logo">
-				</a>
-			</div>
-			<h5 class="ress">Address<h5>
-			<div class="add">
-				<p>1385 Woodroffe Ave<br>Nepean, ON K2G 1V8<br>Canada</p>
-			<div>
-		</div>
+	<footer class="footer" id="site-footer">
+	  <table class="f-table">
+						<tr>
+							<th>Quick Links</th>
+							<th colspan="3">Follow Us</th>
+							<th>Address</th>
+						</tr>
+						<tr>
+							<td><a class="links" href="#">SCHEDULE</a></td>
+							<td rowspan="3"><a href="https://www.youtube.com/">
+								<i class="fab fa-youtube-square"></i></a></td>
+							<td rowspan="3">
+
+								<a href="https://twitter.com/">
+								<i class="fab fa-twitter-square"></i></a></td> 
+
+							<td rowspan="3"><a href="https://www.facebook.com/">
+								<i class="fab fa-facebook"></i></a></td>
+							<td>1385 Woodroffe Ave</td>	
+						</tr>
+						<tr>
+							<td><a class="links" href="#">ABOUT</a></td>
+							<td>Nepean, ON K2G 1V8</td>
+						</tr>
+						<tr>
+							<td><a class="links" href="#">PORTFOLIO</a></td>
+							<td>Canada</td>
+						</tr>
+						<tr>
+							<td><a class="links" href="#">CONTACT</a></td>
+							<td></td> 
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
 	</footer>
 </body>
 </html>
